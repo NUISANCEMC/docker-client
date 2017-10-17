@@ -107,3 +107,14 @@ $ nuisflat -i GENIE:mygeniefile.root -n 100000 -f GenericFlux -o flatgeniefile.r
 ```
 
 
+## Linux docker
+If docker is installed on your Linux machine it is possible to pull and run these images provided you replace 
+```
+docker
+```
+with
+```
+sudo docker
+```
+
+However, we recommend that instead you either build nuisance locally or try to obtain one of our binaries for your build system to avoid docker altogether given that NUISANCE is designed to build on Linux systems.
