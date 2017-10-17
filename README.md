@@ -1,6 +1,6 @@
-# NUISANCE Docker Client
+## NUISANCE Docker Client
 
-# Setup Instructions
+### Setup Instructions
 1. Edit the setup.sh script to choose a valid mount point.
 - Default is '''$HOME/NUISANCEMC'''
 
@@ -17,5 +17,36 @@
 - You should be able to see all the files inside your mount point from the starting working directory of the container.
 
 
+### Run Instructions
+First setup the docker-client environement by sourcing the setup.sh script.
+`$ source setup.sh
+
+Setting up NUISANCE docker client.
+
+Client Tag    : nuisancemc/nuisanceclient
+Version Tag   : :latest
+Mount Point   : /Users/patrickstowell/NUISANCEMC/
+Mount Options :
+Run Command   : 'nuisanceclient'
+
+`
+
+To use the docker container you should place any files required inside the $NUISANCE_MOUNT point you defined in the setup script before you run the container.
+`$ cp mygeniefile.root $NUISANCE_MOUNT/`
+
+Once you are happy that the required files are located in that folder you can run the container using the alias
+`$ nuisanceclient`
+
+You should be able to see the files you copied to the $NUISANCE_MOUNT area.
+`
+$ ls $PWD/
+/Users/patrickstowell/NUISANCEMC/mygeniefile.root
+`
+
+NUISANCE is already setup when you log in so you can use any of the standard applications.
+`
+$ which nuiscomp /NUISANCEMC/nuisance/v2r6/build/Linux/bin/nuiscomp
+$ nuisflat -i GENIE:mygeniefile.root -n 100000 -f GenericFlux -o flatgeniefile.root
+`
 
 
