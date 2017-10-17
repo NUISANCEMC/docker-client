@@ -1,4 +1,5 @@
 #!/bin/sh
+source ./setup.sh
 if [ ! -e $NUISANCE_MOUNT ]
 then
     echo "Making docker mount point"
