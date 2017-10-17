@@ -45,8 +45,8 @@ $ ls $PWD/
 
 NUISANCE is already setup when you log in so you can use any of the standard applications.
 `
-$ which nuiscomp
-
+$ which nuiscomp /NUISANCEMC/nuisance/v2r6/build/Linux/bin/nuiscomp
+$ nuisflat -i GENIE:mygeniefile.root -n 100000 -f GenericFlux -o flatgeniefile.root
 `
 
 
