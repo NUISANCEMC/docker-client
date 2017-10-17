@@ -32,21 +32,25 @@ Run Command   : 'nuisanceclient'
 `
 
 To use the docker container you should place any files required inside the $NUISANCE_MOUNT point you defined in the setup script before you run the container.
-`$ cp mygeniefile.root $NUISANCE_MOUNT/`
+```
+$ cp mygeniefile.root $NUISANCE_MOUNT/
+```
 
 Once you are happy that the required files are located in that folder you can run the container using the alias
-`$ nuisanceclient`
+```
+$ nuisanceclient
+```
 
 You should be able to see the files you copied to the $NUISANCE_MOUNT area.
-`
+```
 $ ls $PWD/
 /Users/patrickstowell/NUISANCEMC/mygeniefile.root
-`
+```
 
 NUISANCE is already setup when you log in so you can use any of the standard applications.
-`
+```
 $ which nuiscomp /NUISANCEMC/nuisance/v2r6/build/Linux/bin/nuiscomp
 $ nuisflat -i GENIE:mygeniefile.root -n 100000 -f GenericFlux -o flatgeniefile.root
-`
+```
 
 
