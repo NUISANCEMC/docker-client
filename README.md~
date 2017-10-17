@@ -1,11 +1,5 @@
 ## NUISANCE Docker Client
 
-Docker allows NUISANCE to be ran on Windows or Mac machines by easily pulling images from docker hub.
-Docker must be installed before using these scripts and root access is required to install it.
-- Docker for Mac (https://docs.docker.com/docker-for-mac/install/#download-docker-for-mac)
-- Docker for Windows (https://docs.docker.com/engine/installation/)
-
-
 ### Setup Instructions
 First, edit the setup.sh script to choose a valid mount point. The Default is set to `$HOME/NUISANCEMC`.
 You should choose somewhere you have read/write access as this is where you will be storing MC files for the nuisance client.
